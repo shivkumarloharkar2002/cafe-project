@@ -6,15 +6,38 @@
 body {
     background-color: rgba(178, 92, 64, 0.75);
 }
+html{
+    font-size: 15px;
+}
 
-/* Navbar */
+/* navbar */
+.bar {
 
+    height: 50px;
+
+    width: 50px;
+
+    border-radius: 50px;
+
+}
+
+.red:hover {
+
+    background-color: rgb(234, 99, 99);
+
+    border-radius: 10px;
+
+    transition: 1s;
+
+    transform: scale(0.9);
+
+}
 
 /* div image */
 .imgmain {
     background-image: url(./..//img/coffee.jpg);
-    height: 400px;
-    width: 100%;
+    height: 100vh;
+    width: 100% !important;
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
@@ -29,33 +52,32 @@ body {
 }
 
 .imgdivtext {
-    width: 40%;
+    width: 40% !important;
     height: 400px;
     color: white;
 }
 
 .imgdivcolor {
     width: 40%;
-    height: 400px;
+    height: 100vh;
     background-color: rgba(178, 92, 64, 0.75);
     color: white;
     /* opacity: 0.5;color: rgb(255, 255, 255);     */
 }
 
 .imgtext1 {
-    padding: 150px 10% 50px 0px;
+    padding:50% 10% 50px 0px;
     color: white;
-    font-size: 50px;
+    font-size:3.75rem;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .paddingtext1 {
-    padding: 150px 0 50px 30px;
+    padding: 50% 0 50px 30px;
 }
 
 /* Cards */
-.card-title .card-text {
-    font-size: 15px;
-}
 
 .cards3 {
     margin: 20px 30px;
@@ -73,205 +95,34 @@ body {
 }
 
 .imgicon {
-    /* margin-left: 169px;
-    margin-top: 10px; */
-    
     display: block;
-margin: 010px auto 20px;
-height: 75px;
-width: 75px;
+    margin: 010px auto 20px;
+    height: 75px;
+    width: 75px;
 
 }
 
 .cardbox {
     height: 300px;
     border: 1px solid black;
+    font-size: 10px;
+}
+@media screen and(max-width:300px) {
+    .cardbox {
+        flex-wrap: wrap;
+    }
 }
 
-.cardbox:hover{
+.cardbox:hover {
     border-radius: 20px;
     box-shadow: 0px 0px 11px 3px rgb(199, 129, 102);
     transform: scale(1);
     transition: 1s;
 }
 
-.cardp{
-    font-size: 20px;
-}
-
-
-/* Form */
-.mapform {
-    margin: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.formdiv {
-    /* padding: 10px 120px; */
-    background-color: #c46b48;
-    /* border: 2px solid #c46b48; */
-    box-shadow: 0px 2px 5px 1px rgb(93, 93, 93);
-    border-radius: 10px;
-    height: 500px;
-    margin: 0px 10px;
-    width: 50%;
-
-}
-
-.formdiv div {
-    margin: 10px;
-}
-
-.formhead {
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans' 'Trebuchet MS', sans-serif;
-}
-
-.fstyle:hover {
-    box-shadow: 5px 5px 5px 1px rgba(178, 92, 64, 0.75);
-    transform: scale(1.05);
-    transition: 1s;
-}
-
-
-.input {
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    /* height: 40px; */
-    width: 100%;
-    box-shadow: 0px 2px 5px 1px rgb(93, 93, 93);
-}
-
-
-.input5 {
-    background-color: #f4511e;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    padding: 10px;
-    width: 120px;
-    text-align: center;
-    font-size: 16px;
-    margin: 4px 2px;
-    opacity: 1;
-    transition: 0.3s;
-}
-
-.input5:hover {
-    background-color: #9f2b08;
-}
-
-.submitbutton {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media screen and(max-width:300px) {
-    .submitbutton {
-        flex-wrap: wrap;
-    }
-}
-
-* {
+.cardp {
+    font-size: 2em;
     margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: rgba(178, 92, 64, 0.75);
-}
-
-/* div image */
-.imgmain {
-    background-image: url(./..//img/coffee.jpg);
-    height: 400px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-@media screen and (max-width:300px) {
-    .imgmain {
-        flex-wrap: wrap;
-    }
-}
-
-.imgdivtext {
-    width: 40%;
-    height: 400px;
-    color: white;
-}
-
-.imgdivcolor {
-    width: 40%;
-    height: 400px;
-    background-color: rgba(178, 92, 64, 0.75);
-    color: white;
-    /* opacity: 0.5;color: rgb(255, 255, 255);     */
-}
-
-.imgtext1 {
-    padding: 150px 10% 50px 0px;
-    color: white;
-    font-size: 50px;
-}
-
-.paddingtext1 {
-    padding: 150px 0 50px 30px;
-}
-
-/* Cards */
-.card-title .card-text {
-    font-size: 15px;
-}
-
-.cards3 {
-    margin: 20px 30px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    /* border: 1px solid black; */
-}
-
-@media screen and(max-width:300px) {
-    .cards3 {
-        flex-wrap: wrap;
-    }
-}
-
-.imgicon {
-    /* margin-left: 169px;
-    margin-top: 10px; */
-    
-    display: block;
-margin: 010px auto 20px;
-height: 75px;
-width: 75px;
-
-}
-
-.cardbox {
-    height: 300px;
-    border: 1px solid black;
-}
-
-.cardbox:hover{
-    border-radius: 20px;
-    box-shadow: 0px 0px 11px 3px rgb(199, 129, 102);
-    transform: scale(1);
-    transition: 1s;
-}
-
-.cardp{
-    font-size: 20px;
 }
 
 
@@ -305,9 +156,9 @@ width: 75px;
 }
 
 .fstyle:hover {
-    box-shadow: 5px 5px 5px 1px rgba(178, 92, 64, 0.75);
+    box-shadow: 4px 4px 3px 1px rgb(118 29 0);
     transform: scale(1.05);
-    transition: 1s;
+    transition: 0.5s;
 }
 
 
@@ -350,3 +201,82 @@ width: 75px;
         flex-wrap: wrap;
     }
 }
+
+.mapdiv {
+    border-radius: 20px;
+    /* width: 100%;
+    height: 100%; */
+}
+
+.footer{
+  
+    display: flex;
+    justify-content: space-around;
+     flex-wrap: wrap;
+      
+    }
+    
+    .main-footer{
+      height:auto;
+      width: 100%;
+      border: 2px solid;
+      background-color:rgb(41, 41, 48);
+      color:white;
+      margin-top: 50px;
+      padding-top:50px ;
+    }
+    
+    .icon {
+      text-align: center;
+      margin: 10px 0px;
+    
+    }
+    @media  screen and (max-width:300px){
+    .footer{
+      flex-wrap: wrap;
+    }
+    }
+    
+    @media screen and(max-width:300px) {
+      .type{
+       text-align: center;
+       /* margin-bottom: 50px; */
+      }
+    }
+      .height{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+     
+      }
+      .type2{
+        text-align: center;
+      
+    
+      }
+      .type3{
+        text-align: center;
+      }
+    .img20{
+      /* display: flex; */
+      /* flex-wrap:wrap; */
+      /* justify-content: space-evenly; */
+      height: 40px; 
+      position: relative;
+      left: 90%;
+      top: 50%;
+       margin-left:30px ;
+    }
+    
+    @media screen and (max-width:300px) {
+      .img20{
+        flex-wrap: wrap; 
+      }
+    }
+    .since{
+      text-align: center;
+      position: relative;
+      top: 40px;
+    left:35%;
+    }
